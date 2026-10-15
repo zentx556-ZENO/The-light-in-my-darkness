@@ -280,6 +280,23 @@
       .dream-photo::after { box-shadow:inset 0 0 38px 16px #070707; }
       body.sunshine .dream-photo::after { box-shadow:inset 0 0 38px 16px #fdf1cc; }
     }
+
+    /* Paired story visuals: original monochrome image crossfades to the supplied colour image after the final cube is tapped. */
+    .story-visual-pair { position:relative; display:block; width:min(100%,56rem); aspect-ratio:735/490; margin:0 auto clamp(5rem,12vw,10rem); overflow:hidden; isolation:isolate; background:#080808; }
+    .story-visual-pair img { position:absolute; inset:0; display:block; width:100%; height:100%; object-fit:cover; object-position:center; user-select:none; -webkit-user-drag:none; }
+    .story-visual-pair .visual-mono { z-index:0; opacity:1; filter:none; transition:opacity 3.6s cubic-bezier(.4,.05,.2,1), filter 3.6s ease; }
+    .story-visual-pair .visual-color { z-index:1; opacity:0; filter:blur(7px) saturate(.95); transition:opacity 4.2s cubic-bezier(.4,.05,.2,1) .15s, filter 4.2s cubic-bezier(.3,.05,.2,1) .15s; }
+    .story-visual-pair::after { content:""; position:absolute; z-index:2; inset:0; pointer-events:none; box-shadow:inset 0 0 55px 20px #050505; transition:box-shadow 3.6s ease; }
+    body.sunshine .story-visual-pair .visual-color { opacity:1; filter:blur(0) saturate(1.04); }
+    body.sunshine .story-visual-pair .visual-mono { opacity:0; }
+    body.sunshine .story-visual-pair::after { box-shadow:inset 0 0 55px 20px #fdf1cc55; }
+    .story-visual-pair.color-to-color .visual-mono { opacity:1; }
+    .story-visual-pair.color-to-color .visual-color { opacity:0; filter:blur(7px) saturate(.95); }
+    body.sunshine .story-visual-pair.color-to-color .visual-mono { opacity:0; }
+    body.sunshine .story-visual-pair.color-to-color .visual-color { opacity:1; filter:blur(0) saturate(1.04); }
+    @media(max-width:600px) { .story-visual-pair { aspect-ratio:5/4; } .story-visual-pair img { object-position:center; } }
+    @media(prefers-reduced-motion:reduce) { .story-visual-pair .visual-mono,.story-visual-pair .visual-color,.story-visual-pair::after { transition-duration:.01ms !important; transition-delay:0ms !important; } }
+
   </style>
   <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
@@ -366,8 +383,10 @@
    <section class="scene dark-days" aria-label="The darkest days">
     <div class="scene-inner scene-wide">
      <h3 data-template-id="dark-label" class="canva-text scene-label reveal" style="color: rgb(187, 187, 187); font-weight: 500; font-style: normal; font-size: 10px;">THE DARKEST DAYS</h3>
-     <svg class="illustration hall-art reveal" viewBox="0 0 900 310" role="img" aria-label="An empty hallway receding into darkness"><path d="M0 0 348 122 M900 0 552 122 M0 310 348 187 M900 310 552 187 M348 122 h204 v65 H348z M0 244 h900 M348 122 V0 m204 122 V0"></path> <path class="dim" d="M403 122 V70 h94 v52 M425 187 v-44 h50 v44 M68 58 v201 M834 58 v201 M349 187 215 310 M551 187 685 310"></path>
-     </svg>
+     <figure class="story-visual-pair reveal" aria-label="A landscape seen through a window, changing from monochrome to golden sunlight">
+      <img class="visual-mono" src="darkest-days-mono.jpg" width="540" height="346" loading="lazy" decoding="async" alt="A dark black-and-white landscape seen through a three-pane window.">
+      <img class="visual-color" src="darkest-days-color.jpg" width="540" height="346" loading="lazy" decoding="async" alt="The same landscape glowing with warm golden sunlight." aria-hidden="true">
+     </figure>
     </div>
     <div class="scene-inner prose">
      <p class="reveal">My life had become a routine of pretending. I laughed when I was expected to laugh, answered when someone spoke to me, and smiled whenever silence threatened to reveal too much. I had become so good at convincing people that I was fine that even I began to wonder whether there was anything left of me beneath the act.</p>
@@ -380,8 +399,10 @@
     <div class="light-rays" aria-hidden="true"></div>
     <div class="scene-inner scene-wide">
      <h2 data-template-id="encounter-label" class="canva-text scene-label reveal" style="color: rgb(187, 187, 187); font-weight: 500; font-style: normal; font-size: 10px;">03 — THE ENCOUNTER</h2>
-     <svg class="illustration window-art reveal" viewBox="0 0 900 390" role="img" aria-label="An ordinary hallway with a sunlit window and two distant people"><path d="M0 320 H900 M56 45 V320 M570 42 V320 M70 55 h320 v205 H70z M230 55 v205 M70 158 h320"></path> <path class="dim" d="M390 260 566 320 M70 260 0 300 M230 260 426 320 M570 320 822 390 M390 55 570 42"></path> <path class="bright" d="M500 186 q-10-9-9-24 q2-20 20-20 q18 2 19 20 q1 14-8 23 M494 184 q16 12 32 0 l8 14 -8 72 -37 0 -8-72z M490 270 l-5 50 m39-50 7 50 M485 203 l-13 41 m57-41 12 38"></path> <path class="dim" d="M628 192 q-8-8-7-21 q1-17 16-17 q16 1 16 18 l-6 19 M625 194 l26 0 10 69 h-47z M621 263 l-4 57 m39-57 6 57"></path>
-     </svg>
+     <figure class="story-visual-pair reveal" aria-label="Two hands reaching toward each other, changing from black and white to warm glowing color">
+      <img class="visual-mono" src="encounter-mono.jpg" width="564" height="564" loading="lazy" decoding="async" alt="A black-and-white image of one hand reaching toward a glowing hand.">
+      <img class="visual-color" src="encounter-color.jpg" width="736" height="736" loading="lazy" decoding="async" alt="The reaching hands surrounded by warm amber light." aria-hidden="true">
+     </figure>
     </div>
     <div class="scene-inner prose">
      <p class="isolated reveal">Then I met her.</p>
@@ -400,8 +421,10 @@
     <div class="light-rays" aria-hidden="true"></div>
     <div class="scene-inner scene-wide">
      <h2 data-template-id="light-label" class="canva-text scene-label reveal" style="color: rgb(238, 238, 238); font-weight: 500; font-style: normal; font-size: 10px;">04 — THE LIGHT</h2>
-     <svg class="illustration reveal" viewBox="0 0 900 220" role="img" aria-label="Two people share a quiet moment beside a doorway"><path class="dim" d="M0 185 H900 M625 20 h172 v165 M625 20 v165 M645 40 h132 v145 M626 185 468 220 M797 185 900 220"></path> <path d="M315 95 q-9-6-9-18 q0-16 15-17 q15 1 15 17 l-7 18 M307 96 h25 l8 70 h-40z M307 166 l-7 19 m32-19 8 19 M407 93 q-8-7-8-19 q2-16 17-16 q14 2 15 17 l-8 18 M400 96 h30 l9 69 h-47z M400 165 l-8 20 m39-20 8 20"></path> <path class="dim" d="M340 122 q26 7 48-2"></path>
-     </svg>
+     <figure class="story-visual-pair color-to-color reveal" aria-label="Two candles, one lit and one extinguished, transitioning to two glowing figures holding hands">
+      <img class="visual-mono" src="the-light-candles.jpg" width="1127" height="968" loading="lazy" decoding="async" alt="Two candles in a dark room, one still burning and one extinguished.">
+      <img class="visual-color" src="the-light-holding-hands.jpg" width="736" height="736" loading="lazy" decoding="async" alt="Two glowing figures reaching for and holding each other in warm golden light." aria-hidden="true">
+     </figure>
     </div>
     <div class="scene-inner prose">
      <p class="reveal">Soon, I began noticing things I would once have overlooked. The way she tilted her head when she was confused. How she sometimes laughed so hard that she had to catch her breath. The little expressions that crossed her face when she thought no one was paying attention. The way she could turn the most insignificant story into something worth listening to.</p>
@@ -421,8 +444,10 @@
     <div class="light-rays" aria-hidden="true"></div>
     <div class="scene-inner scene-wide">
      <h3 data-template-id="meaning-label" class="canva-text scene-label reveal" style="color: rgb(238, 238, 238); font-weight: 500; font-style: normal; font-size: 10px;">WHAT LOVE MEANS</h3>
-     <svg class="illustration flower-art reveal" viewBox="0 0 360 300" role="img" aria-label="A delicate flower growing through a crack"><path class="dim" d="M5 275 h119 l39-9 26 8 36-6 h130 M163 266 l-21 21 m21-21 26 8 16 21"></path> <path class="bright" d="M177 269 q-8-60 6-127 M179 216 q-36 4-41-31 q28 3 41 31 M181 187 q37-6 43-38 q-34 5-43 38 M183 142 q-14-15-8-31 q11-18 23-3 q15-12 26 2 q7 17-10 29 q-16 12-31 3z M186 135 q15 5 25-2 M196 117 q-2 11 4 18"></path>
-     </svg>
+     <figure class="story-visual-pair reveal" aria-label="A single flower in darkness, blooming into golden light">
+      <img class="visual-mono" src="love-means-mono.jpg" width="735" height="490" loading="lazy" decoding="async" alt="A lone pale flower standing in a dark, monochrome landscape.">
+      <img class="visual-color" src="love-means-color.jpg" width="735" height="490" loading="lazy" decoding="async" alt="The same flower glowing golden-orange in the darkness." aria-hidden="true">
+     </figure>
     </div>
     <div class="scene-inner prose">
      <p class="reveal">I had spent so much of my life believing that I needed to become someone better before I could deserve happiness. I thought I had to fix every broken part of myself, bury every painful memory, and learn how to stand alone before I could let another person into my life.</p>
