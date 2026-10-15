@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20261013-04-e17deef","C":{"Abril Fatface":"YACgEZbkUVE,0","Albert Sans":"YAHO2HRfeh4,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo Black":"YACgEZulLoA,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Baloo 2":"YAHO2IcQUcM,0","Barlow Condensed":"YAFdJljEuFc,0","Barlow":"YAFdJsyuOPM,1","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Cinzel":"YACgEeV8bIQ,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Figtree":"YAHO2b-mV7A,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Fredoka":"YACgEZml080,0","Georgia":"YAGzXkO0pEM,0","Hanken Grotesk":"YAHO2VB9G0I,0","Helvetica":"YAFcf7zkXN0,0","IBM Plex Mono":"YAFdJkmvhGI,0","IBM Plex Sans":"YAFdJgT0SHI,0","Impact":"YAFcfnjI7Vk,0","Instrument Sans":"YAHO2bKyaSQ,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Italiana":"YAHO2Toik_w,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Karla":"YAHO2V2NSXM,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Libre Caslon Display":"YAHO2XhLmt0,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Noto Sans JP":"YAFdJiHXlcI,0","Noto Sans KR":"YAGsojZj-RQ,0","Nunito Sans":"YAFdtQJYB9w,1","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Outfit":"YAHO2nVlg14,0","Pacifico":"YADLjORQ1u4,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAHO2gdhi18,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Public Sans":"YAFdJj8NdaU,1","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Sarabun":"YAFdJssSnME,0","Schibsted Grotesk":"YAHO2sWydRk,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Space Grotesk":"YAHO2sjPCSM,0","Space Mono":"YADW1-vpsoc,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0"}}');</script><script src="/_sdk/05db820ba1544614.telemetry_sdk.js" integrity="sha512-a7JzkQDDcioSXpM61nxTfeRW7PcxWQy5+BrhyeTFmQFsXJ+Gncm0y50u7fTA7qOPegFnRgqCfa0mGUOK1yjDWQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000" id="theme-color-meta">
+  <title>The Light in My Darkness</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    :root { --ink:#000; --paper:#eee; --muted:#a8a8a8; }
+    *,*::before,*::after { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; width:100%; overflow-x:hidden; color:var(--paper); font-family:Cardo,serif; }
+    body::after { content:""; position:fixed; inset:0; z-index:18; pointer-events:none; opacity:.055; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E"); }
+    button { cursor:pointer; }
+    .hidden { display:none; }
+    button:focus-visible,a:focus-visible { outline:2px solid #fff; outline-offset:6px; }
+    .skip-link { position:fixed; z-index:40; top:-5rem; left:1rem; padding:.8rem 1rem; background:#fff; color:#000; font:600 .75rem 'Work Sans',sans-serif; }
+    .skip-link:focus { top:1rem; }
+    .progress-track { position:fixed; z-index:25; inset:0 0 auto; height:2px; background:#222; }
+    .progress-fill { display:block; width:0; height:100%; background:#aaa; }
+    .sound-control { position:fixed; z-index:26; top:1.25rem; right:clamp(1rem,4vw,3rem); min-height:44px; min-width:112px; padding:.7rem .9rem; border:1px solid #555; background:#090909ed; color:#eee; font:500 .65rem 'Work Sans',sans-serif; letter-spacing:.16em; }
+    .sound-control:hover { border-color:#eee; }
+    .opening,.ending { position:relative; min-height:calc(100 * min(var(--vh, 1vh), 1vh)); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:7rem 1.5rem 5rem; overflow:hidden; }
+    .opening { isolation:isolate; background:radial-gradient(ellipse at 50% 78%,#151515 0%,#050505 35%,#000 75%); }
+    .opening::before { content:""; position:absolute; bottom:0; left:50%; width:68px; height:210px; transform:translateX(-50%); opacity:.58; background:radial-gradient(ellipse at 50% 12%,#292929 0 13%,transparent 14%),linear-gradient(100deg,transparent 12%,#171717 30% 70%,transparent 88%); clip-path:polygon(30% 0,70% 0,80% 19%,95% 67%,72% 70%,73% 100%,27% 100%,28% 70%,5% 67%,20% 19%); filter:blur(2px); }
+    .opening-inner { position:relative; z-index:1; width:min(100%,57rem); padding-bottom:9rem; }
+    .opening h1 { margin:0; font-size:clamp(2.1rem,6vw,5.3rem); font-weight:400; line-height:1.2; letter-spacing:.12em; text-transform:uppercase; animation:title-in 3.2s ease both; }
+    .subtitle { margin:1.7rem auto 0; max-width:35rem; color:#aaa; font-size:clamp(1rem,2vw,1.3rem); font-style:italic; line-height:1.6; animation:title-in 2s ease 1.2s both; }
+    @keyframes title-in { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:none; } }
+    .scroll-cue { position:absolute; bottom:clamp(2rem,8vw,5rem); left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:1rem; padding:1rem; border:0; background:transparent; color:#ccc; font:500 .65rem 'Work Sans',sans-serif; letter-spacing:.3em; white-space:nowrap; }
+    .scroll-cue::after { content:""; width:1px; height:42px; background:linear-gradient(#aaa,transparent); }
+    .story { width:100%; }
+    .scene { position:relative; width:100%; overflow:hidden; padding:clamp(6rem,12vw,11rem) 1.5rem; }
+    .dream { background:radial-gradient(ellipse at 50% 19%,#171717,#050505 52%,#020202); }
+    .dark-days { background:#050505; }
+    .encounter { background:linear-gradient(160deg,#111 0%,#292929 52%,#151515 100%); }
+    .little-things { background:linear-gradient(#232323,#363636); }
+    .meaning { background:linear-gradient(#363636,#282828); }
+    .reflection { background:linear-gradient(#282828,#090909 86%); }
+    .scene-inner { position:relative; z-index:2; width:min(100%,43rem); margin:auto; }
+    .scene-wide { width:min(100%,61rem); }
+    .scene-label { display:block; margin-bottom:3.5rem; color:#bbb; font:500 .65rem 'Work Sans',sans-serif; letter-spacing:.3em; text-transform:uppercase; }
+    .prose p { margin:0 0 2rem; font-size:clamp(1.12rem,1.6vw,1.35rem); line-height:1.95; color:#f0f0f0; }
+    .prose p:last-child { margin-bottom:0; }
+    .prose .isolated { max-width:35rem; margin:clamp(5rem,12vw,10rem) auto; text-align:center; font-size:clamp(1.45rem,2.6vw,2.15rem); line-height:1.65; color:#fff; }
+    .prose .isolated:first-child { margin-top:0; }
+    .illustration { display:block; width:min(100%,56rem); height:auto; margin:0 auto clamp(5rem,12vw,10rem); overflow:visible; }
+    .illustration path,.illustration line,.illustration ellipse { fill:none; stroke:#aaa; stroke-width:1; stroke-linecap:round; stroke-linejoin:round; }
+    .illustration .dim { stroke:#666; }
+    .illustration .bright { stroke:#f4f4f4; }
+    .illustration .fill-white { fill:#eee; stroke:#eee; }
+    .dream-art { opacity:.75; filter:drop-shadow(0 0 28px #ffffff18); }
+    .hall-art { opacity:.48; }
+    .window-art { opacity:.85; }
+    .flower-art { width:min(100%,23rem); }
+    .light-rays { position:absolute; inset:0; pointer-events:none; background:radial-gradient(ellipse at 78% 8%,#ffffff12,transparent 40%); }
+    .reveal { opacity:0; transform:translateY(16px); transition:opacity 1.15s ease,transform 1.15s ease,color 3.2s ease; }
+    .reveal.in-view { opacity:1; transform:none; }
+    .final-quote { padding:clamp(5rem,12vw,10rem) 0; text-align:center; font-size:clamp(1.55rem,3vw,2.6rem) !important; line-height:1.55 !important; }
+    .ending { background:#000; }
+    .cube { position:relative; display:block; width:clamp(145px,22vw,220px); aspect-ratio:1; padding:0; border:1px solid #252525; background:#050505; color:#fff; overflow:hidden; border-radius:0; box-shadow:none; transition:border-color .4s,box-shadow .8s; }
+    .cube:hover,.cube:focus-visible { border-color:#858585; }
+    .cube::before { content:""; position:absolute; inset:0; background:linear-gradient(135deg,#101010,#000 65%); transition:opacity 1.8s; }
+    .cube-art { position:absolute; inset:0; width:100%; height:100%; opacity:0; transform:scale(.92); transition:opacity 2s ease,transform 2.4s ease; }
+    .cube-art * { fill:none; stroke:#eee; stroke-width:.85; stroke-linecap:round; stroke-linejoin:round; }
+    .cube-memory-image { display:block; object-fit:cover; object-position:center; background:#000; }
+    .cube-art .dress { fill:#eee; }
+    .cube-art .hair { fill:#050505; }
+    .ending.is-revealed .cube { border-color:#555; box-shadow:0 0 28px #ffffff12; }
+    .ending.is-revealed .cube::before { opacity:0; }
+    .ending.is-revealed .cube-art { opacity:1; transform:none; }
+    .cube-prompt { margin:2.5rem 0 0; color:#aaa; font-style:italic; line-height:1.6; transition:opacity .7s; }
+    .ending.is-revealed .cube-prompt { opacity:0; }
+    .ending-sentence { max-width:43rem; margin:2.8rem 0 0; color:#fff; font-size:clamp(1.15rem,2.3vw,1.7rem); line-height:1.7; opacity:0; visibility:hidden; transform:translateY(9px); transition:opacity 1.5s ease 1s,transform 1.5s ease 1s,visibility 0s linear 1s,color 3.2s ease; }
+    .ending.is-revealed .ending-sentence { opacity:1; visibility:visible; transform:none; }
+    @media(max-width:600px) {
+      .scene { padding:6rem 1.35rem; }
+      .prose p { line-height:1.8; margin-bottom:1.65rem; }
+      .prose .isolated { margin:5rem auto; }
+      .opening-inner { padding-bottom:7rem; }
+    }
+    @media(prefers-reduced-motion:reduce) {
+      html { scroll-behavior:auto; }
+      *,*::before,*::after { animation-duration:.01ms !important; transition-duration:.01ms !important; transition-delay:0ms !important; }
+      .reveal { opacity:1; transform:none; }
+    }
+
+    /* Ambient nature animation: birds above, wind-swept flowers below */
+    .nature-motion {
+      position:fixed; inset:0; z-index:3; pointer-events:none; overflow:hidden;
+      contain:layout paint;
+    }
+    .bird-flight {
+      position:absolute; top:clamp(2.5rem,9vh,6.5rem); left:-14rem;
+      width:clamp(2rem,4vw,3.4rem); height:auto;
+      opacity:0; color:#f4f4f4;
+      animation:bird-cross 23s linear infinite;
+      filter:drop-shadow(0 0 5px #fff2);
+    }
+    .bird-flight svg { display:block; width:100%; height:auto; overflow:visible; }
+    .bird-flight path {
+      fill:none; stroke:currentColor; stroke-width:2.2;
+      stroke-linecap:round; stroke-linejoin:round;
+      transform-origin:center;
+      animation:wing-flap 1.15s ease-in-out infinite alternate;
+    }
+    .bird-flight.bird-two { top:clamp(4.5rem,16vh,10rem); width:clamp(1.4rem,2.6vw,2.3rem); animation-duration:31s; animation-delay:-12s; opacity:.55; }
+    .bird-flight.bird-three { top:clamp(2rem,6vh,4.5rem); width:clamp(1rem,1.8vw,1.6rem); animation-duration:27s; animation-delay:-19s; opacity:.35; }
+    @keyframes bird-cross {
+      0% { transform:translate3d(-10vw,0,0) rotate(-3deg); opacity:0; }
+      8% { opacity:.65; }
+      45% { transform:translate3d(52vw,-1.2rem,0) rotate(2deg); }
+      92% { opacity:.55; }
+      100% { transform:translate3d(120vw,1rem,0) rotate(-2deg); opacity:0; }
+    }
+    @keyframes wing-flap { from { transform:scaleY(.72) rotate(-4deg); } to { transform:scaleY(1.08) rotate(4deg); } }
+    .wind-flowers {
+      position:absolute; left:0; right:0; bottom:-1px; width:100%;
+      height:clamp(5rem,17vh,12rem); opacity:.48;
+      color:#e7e7e7; overflow:visible;
+      mask-image:linear-gradient(to top,#000 0%,#000 45%,transparent 100%);
+    }
+    .wind-flowers .flower-group {
+      transform-box:fill-box; transform-origin:bottom center;
+      animation:flower-breeze 4.8s ease-in-out infinite alternate;
+    }
+    .wind-flowers .flower-group:nth-child(2n) { animation-duration:6.2s; animation-delay:-2s; }
+    .wind-flowers .flower-group:nth-child(3n) { animation-duration:5.4s; animation-delay:-1s; }
+    .wind-flowers path,.wind-flowers circle,.wind-flowers ellipse {
+      vector-effect:non-scaling-stroke;
+      fill:none; stroke:currentColor; stroke-width:1.15;
+      stroke-linecap:round; stroke-linejoin:round;
+    }
+    .wind-flowers .petal { fill:#f5f5f5; fill-opacity:.12; }
+    @keyframes flower-breeze {
+      from { transform:rotate(-2.2deg) translateX(-2px); }
+      to { transform:rotate(3.2deg) translateX(4px); }
+    }
+    @media (max-width:600px) {
+      .nature-motion { opacity:.8; }
+      .wind-flowers { height:6.5rem; opacity:.35; }
+      .bird-flight { top:4rem; }
+      .bird-flight.bird-two { top:6.5rem; }
+    }
+    @media (prefers-reduced-motion:reduce) {
+      .bird-flight,.bird-flight path,.wind-flowers .flower-group { animation:none !important; }
+      .bird-flight { left:20%; opacity:.35; }
+    }
+
+    /* ================================================================
+       FINAL CUBE: blurred black-and-white photo -> sharp colour photo
+       ================================================================ */
+    .sound-control .hidden { display:none; }
+    .cube { -webkit-tap-highlight-color:transparent; touch-action:manipulation; }
+    .cube-memory-image {
+      --cube-blur:9px;
+      opacity:1;
+      transform:scale(1.18);
+      filter:grayscale(1) blur(var(--cube-blur)) brightness(1.02) contrast(1.1);
+      transition:
+        filter 4.8s cubic-bezier(.3,.05,.2,1) .15s,
+        transform 5.2s cubic-bezier(.25,.1,.2,1) .15s;
+      will-change:filter,transform;
+      backface-visibility:hidden;
+    }
+    @media (max-width:600px) { .cube-memory-image { --cube-blur:6px; } }
+    .ending.is-revealed .cube-memory-image {
+      opacity:1; transform:scale(1);
+      filter:grayscale(0) blur(0) brightness(1.03) contrast(1.02);
+    }
+    .cube::after {
+      content:""; position:absolute; inset:-30%; z-index:2; pointer-events:none; opacity:0;
+      background:radial-gradient(circle at 50% 42%,#fff6c8 0%,#ffe08a55 32%,transparent 65%);
+    }
+    .ending.is-revealed .cube::after { animation:cube-bloom 4.6s ease-out .1s both; }
+    @keyframes cube-bloom { 0% { opacity:0; } 22% { opacity:.85; } 100% { opacity:0; } }
+
+    /* ================================================================
+       SUNSHINE THEME: only applies once body.sunshine is switched on
+       by the cube. Each section gets a warm layer that fades in over
+       the old dark background.
+       ================================================================ */
+    body { transition:background-color 3.4s ease; }
+    .canva-text,.prose p,.scene-label,.subtitle,.scroll-cue,.sound-control { transition-property:color,background-color,border-color,opacity,transform,visibility; transition-duration:3.2s,3.2s,3.2s,1.15s,1.15s,0s; }
+    .progress-track,.progress-fill,.cube { transition:background-color 3.2s ease,border-color 3.2s ease,box-shadow 3.2s ease; }
+    .illustration path,.illustration line,.illustration ellipse { transition:stroke 3.4s ease,fill 3.4s ease; }
+    .illustration { transition:filter 3.4s ease,opacity 3.4s ease; }
+    .bird-flight { transition:color 3.4s ease,filter 3.4s ease; }
+    .wind-flowers { transition:color 3.4s ease,opacity 3.4s ease; }
+    .wind-flowers .petal { transition:fill 3.4s ease,fill-opacity 3.4s ease; }
+
+    .scene::before,.ending::before,.opening::after {
+      content:""; position:absolute; inset:0; z-index:0; pointer-events:none; opacity:0;
+      transition:opacity 3.6s ease var(--sun-delay,0s);
+    }
+    .opening::after { --sun-delay:1.6s; background:
+        radial-gradient(ellipse at 78% 6%,#fff7c4 0%,#ffe9a066 26%,transparent 58%),
+        linear-gradient(180deg,#fff3c4 0%,#ffe8a6 46%,#f8e7b8 72%,#d6e6ac 100%); }
+    .dream::before { --sun-delay:1.2s; background:
+        radial-gradient(ellipse at 50% 18%,#fffbe0 0%,transparent 60%),
+        linear-gradient(180deg,#f8e7b8,#fff2c8 55%,#fbf0cf); }
+    .dark-days::before { --sun-delay:.9s; background:linear-gradient(180deg,#fbf0cf,#f7e4ae 60%,#f3e6b6); }
+    .encounter::before { --sun-delay:.7s; background:
+        radial-gradient(ellipse at 80% 8%,#fff8cf 0%,#ffe08a55 36%,transparent 62%),
+        linear-gradient(160deg,#f3e6b6 0%,#ffe9a6 50%,#f8efc4 100%); }
+    .little-things::before { --sun-delay:.5s; background:linear-gradient(180deg,#f8efc4,#eef0c0 55%,#e3efc0); }
+    .meaning::before { --sun-delay:.3s; background:
+        radial-gradient(ellipse at 20% 10%,#fff6c8 0%,transparent 55%),
+        linear-gradient(180deg,#e3efc0,#f3efc2 60%,#fbf0cc); }
+    .reflection::before { --sun-delay:.15s; background:linear-gradient(180deg,#fbf0cc,#ffeeb8 55%,#fff3d2); }
+    .ending::before { --sun-delay:0s; background:
+        radial-gradient(ellipse at 50% 38%,#fffbe2 0%,#ffeeb088 36%,transparent 70%),
+        linear-gradient(180deg,#fff3d2,#ffe9a8 62%,#d9e8ae); }
+    .ending > * { position:relative; z-index:1; }
+    .opening .scroll-cue { z-index:2; }
+
+    .sun-wash { position:fixed; inset:0; z-index:17; pointer-events:none; overflow:hidden; opacity:0; transition:opacity 4s ease 1s;
+      background:radial-gradient(ellipse at 85% -5%,#ffe9a455 0%,#fff0b822 35%,transparent 65%); }
+    .sun-orb { position:absolute; top:-18vmax; right:-14vmax; width:46vmax; height:46vmax; border-radius:50%;
+      background:radial-gradient(circle,#fff6c4aa 0%,#ffe08a44 38%,transparent 68%); animation:sun-breathe 9s ease-in-out infinite alternate; }
+    @keyframes sun-breathe { from { transform:scale(.94); opacity:.75; } to { transform:scale(1.06); opacity:1; } }
+    body.sunshine .sun-wash { opacity:1; }
+    body.sunshine .scene::before,body.sunshine .ending::before,body.sunshine .opening::after { opacity:1; }
+
+    body.sunshine { background:#fdf1c9 !important; color:#4a3a24; }
+    body.sunshine .canva-text { color:#5a4528 !important; }
+    body.sunshine .opening h1 { color:#4a3418 !important; }
+    body.sunshine .subtitle,body.sunshine .cube-prompt { color:#7a6340 !important; }
+    body.sunshine .scene-label { color:#8a7040 !important; }
+    body.sunshine .prose p { color:#47361f; }
+    body.sunshine .prose .isolated,body.sunshine .final-quote,body.sunshine .ending-sentence { color:#33250f !important; }
+    body.sunshine .scroll-cue { color:#6b5430 !important; }
+    body.sunshine .scroll-cue::after { background:linear-gradient(#b8923f,transparent); }
+    body.sunshine .opening::before { opacity:.22; }
+    body.sunshine .light-rays { background:radial-gradient(ellipse at 78% 8%,#fff3b866,transparent 45%); }
+    .opening::before,.light-rays { transition:opacity 3.4s ease,background 3.4s ease; }
+
+    body.sunshine .progress-track { background:#ecd9a0; }
+    body.sunshine .progress-fill { background:linear-gradient(90deg,#e8b84a,#8fb56a); }
+    body.sunshine .sound-control { background:#fff6d6ee; border-color:#d9b866; color:#5a4528; }
+    body.sunshine .sound-control:hover { border-color:#8a6a2a; }
+    body.sunshine button:focus-visible,body.sunshine a:focus-visible { outline-color:#a8791f; }
+
+    body.sunshine .illustration path,body.sunshine .illustration line,body.sunshine .illustration ellipse { stroke:#9a7b44; }
+    body.sunshine .illustration .dim { stroke:#c4a86c; }
+    body.sunshine .illustration .bright { stroke:#5f8240; }
+    body.sunshine .illustration .fill-white { fill:#fff6d2; stroke:#d4a93e; }
+    body.sunshine .dream-art { filter:drop-shadow(0 0 26px #ffd96a88); }
+    body.sunshine .hall-art { opacity:.7; }
+
+    body.sunshine .cube { border-color:#e2c373; background:#fff3c8; box-shadow:0 12px 44px #f2c75c66,0 0 0 8px #fff3c855; }
+    body.sunshine .ending.is-revealed .cube { border-color:#e2c373; box-shadow:0 12px 44px #f2c75c66,0 0 0 8px #fff3c855; }
+
+    body.sunshine .bird-flight { color:#6b5a32; filter:drop-shadow(0 0 5px #ffe08a88); }
+    body.sunshine .wind-flowers { color:#6f9a4a; opacity:.75; }
+    body.sunshine .wind-flowers .petal { fill:#ffd36e; fill-opacity:.55; }
+    @media (max-width:600px) { body.sunshine .wind-flowers { opacity:.62; } }
+    body.sunshine::after { opacity:.03; }
+    /* ================================================================
+       THE DREAM PHOTO: monochrome until the cube is touched, then the
+       real colour photograph fades in as the site turns to sunshine
+       ================================================================ */
+    .dream-photo { position:relative; display:block; width:min(100%,56rem); aspect-ratio:1516/998; margin:0 auto clamp(5rem,12vw,10rem); overflow:hidden; background:#0b0b0b; isolation:isolate; }
+    .dream-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 50%; display:block; user-select:none; -webkit-user-drag:none; }
+    .dream-img-mono { z-index:0; filter:contrast(1.04) brightness(.96); }
+    .dream-img-color { z-index:1; opacity:0; filter:blur(7px) saturate(.9) brightness(1.08);
+      transition:opacity 5.2s cubic-bezier(.4,.05,.2,1) .2s, filter 5.6s cubic-bezier(.3,.05,.2,1) .2s; will-change:opacity,filter; }
+    .dream-photo::before { content:""; position:absolute; z-index:2; inset:0; pointer-events:none; opacity:0;
+      background:radial-gradient(ellipse 34% 46% at 67% 60%,#fff3bf 0%,#ffdf8a66 40%,transparent 72%); }
+    .dream-photo::after { content:""; position:absolute; z-index:3; inset:0; pointer-events:none;
+      box-shadow:inset 0 0 60px 26px #070707; transition:box-shadow 3.4s ease; }
+    body.sunshine .dream-img-color { opacity:1; filter:none; }
+    body.sunshine .dream-photo::before { animation:dream-bloom 5.6s ease-out .2s both; }
+    body.sunshine .dream-photo::after { box-shadow:inset 0 0 60px 26px #fdf1cc; }
+    @keyframes dream-bloom { 0% { opacity:0; } 30% { opacity:.7; } 100% { opacity:0; } }
+    @media (max-width:600px) {
+      .dream-photo { aspect-ratio:5/4; }
+      .dream-img { object-position:68% 55%; }
+      .dream-photo::before { background:radial-gradient(ellipse 42% 50% at 66% 56%,#fff3bf 0%,#ffdf8a66 40%,transparent 72%); }
+      .dream-photo::after { box-shadow:inset 0 0 38px 16px #070707; }
+      body.sunshine .dream-photo::after { box-shadow:inset 0 0 38px 16px #fdf1cc; }
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="/_sdk/570d53629f0b998d.data_sdk.js" type="text/javascript" integrity="sha512-JEN39+V+Nvv9ZZOVS8vNk1iA9ErZJHTdgOw9KzPuMiK7m0I+KPEr/wmTnCFIQVsDjCZgJWfGnFi1IQh2Io2qyA=="></script>
+  <script src="/_sdk/436edb4ed2a23f63.editing_sdk.js" type="text/javascript" integrity="sha512-eoa+TIswQfRWHNxDCBo3gFMWQv4guhxR8ijesoX484mbq829oRd+K0jVEzPbkgmTFRlpvrjhzJyXMMJkxWP4Zw=="></script>
+  <script src="/_sdk/f195026a424c1f85.resizing_sdk.js" type="text/javascript" integrity="sha512-8On4Z+AXh1abEzZJ9Dbn9wOvFg+k1LsAaAzKGQ7LlfgXajZ9xEmZaZ1QVzv0AWhCZtCsEpWSOG9DgLri06TS7A=="></script>
+ </head>
+ <body data-template-id="__page-root" class="w-full" style="background: rgb(0, 0, 0);"><a class="skip-link" href="#story-start">Skip to story</a>
+
+  <div class="nature-motion" aria-hidden="true">
+    <div class="bird-flight bird-one">
+      <svg viewBox="0 0 64 32"><path d="M3 21 Q13 6 25 20 Q32 25 37 17 Q47 5 61 13"/></svg>
+    </div>
+    <div class="bird-flight bird-two">
+      <svg viewBox="0 0 64 32"><path d="M3 21 Q13 6 25 20 Q32 25 37 17 Q47 5 61 13"/></svg>
+    </div>
+    <div class="bird-flight bird-three">
+      <svg viewBox="0 0 64 32"><path d="M3 21 Q13 6 25 20 Q32 25 37 17 Q47 5 61 13"/></svg>
+    </div>
+    <svg class="wind-flowers" viewBox="0 0 1200 220" preserveAspectRatio="none">
+      <g class="flower-group">
+        <path d="M90 220 Q82 150 104 84 M95 184 Q64 155 46 143 M100 158 Q128 130 143 117"/>
+        <path d="M104 84 Q86 65 91 49 Q106 54 104 84Z" class="petal"/><path d="M104 84 Q120 62 137 68 Q132 84 104 84Z" class="petal"/><circle cx="105" cy="84" r="5" class="petal"/>
+        <path d="M46 143 Q26 126 33 113 Q49 120 46 143Z" class="petal"/><path d="M46 143 Q65 126 78 136 Q67 149 46 143Z" class="petal"/><circle cx="47" cy="143" r="4"/>
+      </g>
+      <g class="flower-group">
+        <path d="M270 220 Q290 154 272 106 M282 178 Q319 159 337 141 M278 150 Q249 132 236 111"/>
+        <path d="M272 106 Q250 91 260 75 Q275 83 272 106Z" class="petal"/><path d="M272 106 Q289 82 307 93 Q296 107 272 106Z" class="petal"/><circle cx="273" cy="106" r="5" class="petal"/>
+        <path d="M337 141 Q327 120 343 110 Q353 125 337 141Z" class="petal"/><path d="M337 141 Q357 127 369 142 Q354 151 337 141Z" class="petal"/><circle cx="338" cy="141" r="4"/>
+      </g>
+      <g class="flower-group">
+        <path d="M485 220 Q465 155 492 94 M478 181 Q445 162 431 143 M484 158 Q514 141 531 120"/>
+        <path d="M492 94 Q473 77 484 61 Q499 70 492 94Z" class="petal"/><path d="M492 94 Q512 73 527 86 Q516 100 492 94Z" class="petal"/><circle cx="493" cy="94" r="5" class="petal"/>
+      </g>
+      <g class="flower-group">
+        <path d="M700 220 Q724 151 703 81 M713 180 Q748 158 766 142 M710 153 Q680 133 668 114"/>
+        <path d="M703 81 Q684 64 696 47 Q710 57 703 81Z" class="petal"/><path d="M703 81 Q724 58 740 73 Q728 87 703 81Z" class="petal"/><circle cx="704" cy="81" r="5" class="petal"/>
+        <path d="M766 142 Q758 121 775 110 Q784 126 766 142Z" class="petal"/><path d="M766 142 Q788 128 800 143 Q784 152 766 142Z" class="petal"/><circle cx="767" cy="142" r="4"/>
+      </g>
+      <g class="flower-group">
+        <path d="M930 220 Q905 151 934 99 M921 184 Q889 164 874 147 M926 159 Q955 140 975 125"/>
+        <path d="M934 99 Q915 81 927 65 Q941 74 934 99Z" class="petal"/><path d="M934 99 Q954 77 969 91 Q958 105 934 99Z" class="petal"/><circle cx="935" cy="99" r="5" class="petal"/>
+      </g>
+      <g class="flower-group">
+        <path d="M1110 220 Q1091 161 1117 117 M1104 184 Q1075 165 1062 150 M1110 164 Q1138 146 1154 132"/>
+        <path d="M1117 117 Q1098 99 1110 84 Q1125 94 1117 117Z" class="petal"/><path d="M1117 117 Q1137 95 1152 109 Q1140 123 1117 117Z" class="petal"/><circle cx="1118" cy="117" r="5" class="petal"/>
+      </g>
+      <path d="M0 220 Q150 198 300 220 T600 218 T900 220 T1200 216" opacity=".35"/>
+    </svg>
+  </div>
+
+  <div class="sun-wash" aria-hidden="true"><span class="sun-orb"></span></div>
+
+  <div class="progress-track" aria-hidden="true">
+   <span id="progress" class="progress-fill"></span>
+  </div><button id="sound-toggle" class="sound-control" type="button" aria-label="Turn optional ambient sound on" aria-pressed="false"><span data-template-id="sound-off" class="canva-text" style="color: rgb(238, 238, 238); font-weight: 500; font-style: normal; font-size: 10px;">SOUND: OFF</span><span data-template-id="sound-on" class="canva-text hidden" style="color: rgb(238, 238, 238); font-weight: 500; font-style: normal; font-size: 10px;">SOUND: ON</span></button>
+  <audio id="bg-music" loop preload="none" aria-label="Background music">
+    <source src="her.mp3" type="audio/mpeg">
+  </audio>
+  <header class="opening">
+   <div class="opening-inner">
+    <h1 data-template-id="story-title" class="canva-text" style="color: rgb(238, 238, 238); font-weight: 400; font-style: normal; font-size: 38px; letter-spacing: 0.12rem;">THE LIGHT IN MY DARKNESS</h1>
+    <p data-template-id="story-subtitle" class="canva-text subtitle" style="color: rgb(170, 170, 170); font-weight: 400; font-style: italic; font-size: 19px;">A story about a heart that had forgotten how to hope.</p>
+   </div><button id="scroll-cue" class="scroll-cue" type="button"><span data-template-id="scroll-label" class="canva-text" style="color: rgb(204, 204, 204); font-weight: 500; font-style: normal; font-size: 10px;">SCROLL TO BEGIN</span></button>
+  </header>
+  <main id="story-start" class="story" tabindex="-1" aria-label="The Light in My Darkness story">
+   <section class="scene dream" aria-label="The dream">
+    <div class="scene-inner scene-wide">
+     <h2 data-template-id="dream-label" class="canva-text scene-label reveal" style="color: rgb(187, 187, 187); font-weight: 500; font-style: normal; font-size: 10px;">02 — THE DREAM</h2>
+     <figure class="dream-photo reveal" id="dream-photo">
+      <img id="dream-mono" class="dream-img dream-img-mono" src="dream-monochrome.jpg" width="1516" height="998" decoding="async" alt="A distant woman in a white dress, seen from behind, glowing softly in a misty field of flowers.">
+      <img id="dream-color" class="dream-img dream-img-color" src="dream-color.jpg" width="1516" height="998" decoding="async" alt="" aria-hidden="true">
+     </figure>
+    </div>
+    <div class="scene-inner prose">
+     <p class="isolated reveal">There was a woman who visited me in my dreams.</p>
+     <p class="reveal">She never spoke. She never turned around. She simply stood at a distance, dressed in a white dress and a white shirt, her figure illuminated by a light I could never reach. No matter how far I walked toward her, the distance between us remained the same. And no matter how desperately I tried, I could never see her face.</p>
+     <p class="reveal">Yet, every night, I found myself searching for her.</p>
+     <p class="reveal">I didn't understand why. How could I miss someone whose face I had never seen? How could I fall in love with someone who had never spoken a single word to me? It made no sense, not even to myself. But there was something about her presence that made the loneliness in my chest feel less unbearable. For a little while, the world stopped hurting.</p>
+     <p class="isolated reveal">Then I would wake up.</p>
+     <p class="isolated reveal">And the darkness would be waiting.</p>
+    </div>
+   </section>
+   <section class="scene dark-days" aria-label="The darkest days">
+    <div class="scene-inner scene-wide">
+     <h3 data-template-id="dark-label" class="canva-text scene-label reveal" style="color: rgb(187, 187, 187); font-weight: 500; font-style: normal; font-size: 10px;">THE DARKEST DAYS</h3>
+     <svg class="illustration hall-art reveal" viewBox="0 0 900 310" role="img" aria-label="An empty hallway receding into darkness"><path d="M0 0 348 122 M900 0 552 122 M0 310 348 187 M900 310 552 187 M348 122 h204 v65 H348z M0 244 h900 M348 122 V0 m204 122 V0"></path> <path class="dim" d="M403 122 V70 h94 v52 M425 187 v-44 h50 v44 M68 58 v201 M834 58 v201 M349 187 215 310 M551 187 685 310"></path>
+     </svg>
+    </div>
+    <div class="scene-inner prose">
+     <p class="reveal">My life had become a routine of pretending. I laughed when I was expected to laugh, answered when someone spoke to me, and smiled whenever silence threatened to reveal too much. I had become so good at convincing people that I was fine that even I began to wonder whether there was anything left of me beneath the act.</p>
+     <p class="reveal">Some days, getting out of bed felt like a battle no one would ever know I had fought. Other days, I moved through the hours like a ghost, watching people live their lives while I struggled to find a reason to feel present in my own.</p>
+     <p class="reveal">I didn't need the world to understand me. I had stopped expecting that a long time ago.</p>
+     <p class="isolated reveal">I only wished that, for once, something would give me a reason to look forward to tomorrow.</p>
+    </div>
+   </section>
+   <section class="scene encounter" aria-label="The encounter">
+    <div class="light-rays" aria-hidden="true"></div>
+    <div class="scene-inner scene-wide">
+     <h2 data-template-id="encounter-label" class="canva-text scene-label reveal" style="color: rgb(187, 187, 187); font-weight: 500; font-style: normal; font-size: 10px;">03 — THE ENCOUNTER</h2>
+     <svg class="illustration window-art reveal" viewBox="0 0 900 390" role="img" aria-label="An ordinary hallway with a sunlit window and two distant people"><path d="M0 320 H900 M56 45 V320 M570 42 V320 M70 55 h320 v205 H70z M230 55 v205 M70 158 h320"></path> <path class="dim" d="M390 260 566 320 M70 260 0 300 M230 260 426 320 M570 320 822 390 M390 55 570 42"></path> <path class="bright" d="M500 186 q-10-9-9-24 q2-20 20-20 q18 2 19 20 q1 14-8 23 M494 184 q16 12 32 0 l8 14 -8 72 -37 0 -8-72z M490 270 l-5 50 m39-50 7 50 M485 203 l-13 41 m57-41 12 38"></path> <path class="dim" d="M628 192 q-8-8-7-21 q1-17 16-17 q16 1 16 18 l-6 19 M625 194 l26 0 10 69 h-47z M621 263 l-4 57 m39-57 6 57"></path>
+     </svg>
+    </div>
+    <div class="scene-inner prose">
+     <p class="isolated reveal">Then I met her.</p>
+     <p class="reveal">It was an ordinary day, the kind I would have forgotten without a second thought. I was walking through a hallway when I noticed a girl standing near the window. Sunlight spilled across the floor beside her, catching the edges of her hair as she spoke to someone nearby.</p>
+     <p class="reveal">I don't know what made me stop.</p>
+     <p class="reveal">Perhaps it was the way she laughed, completely unaware of how beautiful an ordinary moment could be. Perhaps it was the warmth in her voice, or the way her eyes seemed to brighten when she listened to someone talk. Or perhaps it was simply the fact that, for the first time in a long while, I found myself wanting to stay somewhere instead of wishing I could disappear.</p>
+     <p class="reveal">There was something familiar about her, though I couldn't explain it. A strange ache stirred in my chest, like remembering a place I had never been.</p>
+     <p class="reveal">For a fleeting moment, I wondered if I had finally found the person I had been searching for in my sleep.</p>
+     <p class="reveal">But I dismissed the thought. Dreams were dreams, and reality had never been kind enough to resemble them.</p>
+     <p class="reveal">I didn't approach her that day. I didn't even know her name.</p>
+     <p class="isolated reveal">Still, I remembered her.</p>
+     <p class="isolated reveal">And the next time I saw her, I remembered her again.</p>
+    </div>
+   </section>
+   <section class="scene little-things" aria-label="The little things">
+    <div class="light-rays" aria-hidden="true"></div>
+    <div class="scene-inner scene-wide">
+     <h2 data-template-id="light-label" class="canva-text scene-label reveal" style="color: rgb(238, 238, 238); font-weight: 500; font-style: normal; font-size: 10px;">04 — THE LIGHT</h2>
+     <svg class="illustration reveal" viewBox="0 0 900 220" role="img" aria-label="Two people share a quiet moment beside a doorway"><path class="dim" d="M0 185 H900 M625 20 h172 v165 M625 20 v165 M645 40 h132 v145 M626 185 468 220 M797 185 900 220"></path> <path d="M315 95 q-9-6-9-18 q0-16 15-17 q15 1 15 17 l-7 18 M307 96 h25 l8 70 h-40z M307 166 l-7 19 m32-19 8 19 M407 93 q-8-7-8-19 q2-16 17-16 q14 2 15 17 l-8 18 M400 96 h30 l9 69 h-47z M400 165 l-8 20 m39-20 8 20"></path> <path class="dim" d="M340 122 q26 7 48-2"></path>
+     </svg>
+    </div>
+    <div class="scene-inner prose">
+     <p class="reveal">Soon, I began noticing things I would once have overlooked. The way she tilted her head when she was confused. How she sometimes laughed so hard that she had to catch her breath. The little expressions that crossed her face when she thought no one was paying attention. The way she could turn the most insignificant story into something worth listening to.</p>
+     <p class="reveal">I began to understand that happiness didn't always arrive as a grand revelation. Sometimes, it came in the form of an unexpected conversation. Sometimes, it was a shared joke on an otherwise miserable afternoon. Sometimes, it was simply seeing someone you cared about walk through the door and realizing that the day had become a little easier to bear.</p>
+     <p class="isolated reveal">I started looking forward to things again.</p>
+     <p class="reveal">Not because my problems had disappeared, nor because my life had suddenly become perfect, but because there was now something within my days that I genuinely wanted to experience.</p>
+     <p class="isolated reveal">Her.</p>
+     <p class="reveal">And the more I came to appreciate her, the more I realized how little she knew about the difference she made.</p>
+     <p class="reveal">She didn't know that I sometimes replayed our conversations in my head when the nights grew too quiet. She didn't know that her smallest acts of kindness stayed with me long after she had forgotten them. She didn't know that there were mornings when I felt exhausted before the day had even begun, and the thought of seeing her was enough to convince me to get up.</p>
+     <p class="reveal">She probably thought she was doing nothing special.</p>
+     <p class="isolated reveal">That was the beautiful thing about her.</p>
+     <p class="reveal">She never had to try to save me. She never had to find the right words or understand every wound I carried. She didn't need to know the battles I fought in silence or the reasons behind the sadness I rarely showed. She simply treated me like someone worth talking to, someone worth knowing, someone who deserved to be there.</p>
+     <p class="reveal">And perhaps that was what I had been missing all along.</p>
+    </div>
+   </section>
+   <section class="scene meaning" aria-label="What love means">
+    <div class="light-rays" aria-hidden="true"></div>
+    <div class="scene-inner scene-wide">
+     <h3 data-template-id="meaning-label" class="canva-text scene-label reveal" style="color: rgb(238, 238, 238); font-weight: 500; font-style: normal; font-size: 10px;">WHAT LOVE MEANS</h3>
+     <svg class="illustration flower-art reveal" viewBox="0 0 360 300" role="img" aria-label="A delicate flower growing through a crack"><path class="dim" d="M5 275 h119 l39-9 26 8 36-6 h130 M163 266 l-21 21 m21-21 26 8 16 21"></path> <path class="bright" d="M177 269 q-8-60 6-127 M179 216 q-36 4-41-31 q28 3 41 31 M181 187 q37-6 43-38 q-34 5-43 38 M183 142 q-14-15-8-31 q11-18 23-3 q15-12 26 2 q7 17-10 29 q-16 12-31 3z M186 135 q15 5 25-2 M196 117 q-2 11 4 18"></path>
+     </svg>
+    </div>
+    <div class="scene-inner prose">
+     <p class="reveal">I had spent so much of my life believing that I needed to become someone better before I could deserve happiness. I thought I had to fix every broken part of myself, bury every painful memory, and learn how to stand alone before I could let another person into my life.</p>
+     <p class="isolated reveal">But she never asked me to be someone else.</p>
+     <p class="reveal">Around her, I didn't feel the need to pretend that I had everything figured out. I could be quiet without feeling invisible. I could laugh without wondering how long the happiness would last. I could have a bad day without believing that one bad day defined the rest of my life.</p>
+     <p class="reveal">She didn't make me forget my darkness.</p>
+     <p class="isolated reveal">She made me realize that my darkness wasn't the only thing left of me.</p>
+     <p class="reveal">Sometimes, I wonder whether she understands how much I appreciate her. Whether she knows that there is a difference between someone who makes you happy and someone who reminds you that happiness is still possible. Whether she realizes that, in a world where I had grown tired of expecting anything good, she became something I never wanted to take for granted.</p>
+     <p class="reveal">I wish I could tell her.</p>
+     <p class="reveal">I wish I could explain that I appreciate her not because she is perfect, but because she is human. Because she has days when she is tired, moments when she doubts herself, and feelings she might not always know how to express. Because she can be happy and sad, confident and uncertain, strong and vulnerable, all without becoming any less wonderful to me.</p>
+     <p class="reveal">I don't want to love only the parts of her that make my life brighter.</p>
+     <p class="reveal">I want to appreciate the person she is, even on the days when she doesn't feel bright at all.</p>
+     <p class="reveal">Because she deserves to be loved on her difficult days, too. She deserves someone who notices when her smile is a little less genuine, who listens when her words come slowly, and who stays when she no longer has the energy to make everything seem okay.</p>
+     <p class="reveal">If she has ever felt the same loneliness I once knew, I hope I can give her even a fraction of the comfort she unknowingly gave me.</p>
+     <p class="reveal">I hope that when the world becomes too heavy for her, she will have somewhere to rest.</p>
+     <p class="reveal">I hope I can become someone whose presence makes her feel safe, someone who listens without judgment and cares without keeping score. I hope I can remind her that she doesn't have to be extraordinary to be cherished, just as she reminded me that I didn't have to be whole to be worthy of love.</p>
+     <p class="isolated reveal">Perhaps that is what love truly means.</p>
+     <p class="reveal">Not finding someone who rescues you from every terrible thing that happens, but finding someone whose existence makes you want to keep living, growing, and becoming a little kinder to yourself. And then, in return, doing your best to make their world gentler, too.</p>
+    </div>
+   </section>
+   <section class="scene reflection" aria-label="The final reflection">
+    <div class="scene-inner prose">
+     <h3 data-template-id="reflection-label" class="canva-text scene-label reveal" style="color: rgb(187, 187, 187); font-weight: 500; font-style: normal; font-size: 10px;">THE FINAL REFLECTION</h3>
+     <p class="reveal">I still have difficult days. The darkness hasn't vanished, and I know it may never disappear completely. There are nights when old thoughts return, when the weight of everything feels familiar again, when I wonder if I have really changed at all.</p>
+     <p class="isolated reveal">But now, I know that a difficult day is only a day. It isn't my entire life.</p>
+     <p class="reveal">I have learned to appreciate the sunlight through my window, the sound of laughter in a crowded hallway, and the quiet comfort of knowing that somewhere in this enormous world, there is a person whose existence has become precious to me.</p>
+     <p class="reveal">And I have learned that I don't need to wait until my life is perfect to be grateful for it.</p>
+     <p class="reveal">Because I have already been given something beautiful.</p>
+     <p class="reveal">Not a promise that I will never hurt again. Not a guarantee that everything will work out the way I hope. Just the chance to have met someone who made me feel, even for a moment, that life was worth looking at a little more closely.</p>
+     <p class="reveal">I don't know what the future holds for us. I don't know if she will stay in my life forever, if our paths will eventually separate, or if there will come a day when I have to learn how to carry these feelings without seeing her anymore.</p>
+     <p class="isolated reveal">The thought frightens me.</p>
+     <p class="reveal">But I refuse to let the fear of losing something beautiful prevent me from appreciating that it exists.</p>
+     <p class="reveal">If our time together is brief, I will still be grateful. If she never learns how much she has changed me, I will still be grateful. And if she never comes to love me the way I have come to love her, I hope I will still have the courage to wish her happiness, even if that happiness takes her somewhere I cannot follow.</p>
+     <p class="isolated reveal">Because she was never obligated to save me.</p>
+     <p class="reveal">Her kindness was never a debt she owed me. Her smile was never a promise. She was simply living her life, being herself, unaware that somewhere along the way, a boy who had nearly forgotten how to hope had found something worth hoping for.</p>
+     <p class="reveal">And that alone is enough to make me thankful.</p>
+     <p class="reveal">Sometimes, I think back to the person I used to be. The boy who wandered through his days without looking forward to anything. The boy who believed that the world had already shown him everything it had to offer, and that whatever remained would only be more of the same.</p>
+     <p class="isolated reveal">I wish I could tell him that he was wrong.</p>
+     <p class="reveal">That one day, he would meet someone who would make him notice the beauty he had spent so long ignoring. Someone who would remind him that there were still conversations to have, memories to make, and mornings worth waking up for.</p>
+     <p class="reveal">Someone who would teach him that even a heart accustomed to darkness could still learn to love the light.</p>
+     <p class="reveal">And if I could go back and tell that boy just one thing, I wouldn't tell him that everything would be okay. I wouldn't promise him that his suffering would end or that the future would be kind.</p>
+     <p class="isolated reveal">I would simply tell him to keep going.</p>
+     <p class="reveal">Because somewhere ahead of him, a girl was living her life, completely unaware that she would one day become one of the reasons he was grateful to be alive.</p>
+     <p class="reveal">And perhaps, someday, I will finally gather the courage to tell her everything I have kept to myself: how her laughter stayed with me, how her kindness mattered, how her ordinary presence became extraordinary in my eyes. How, without ever asking to be important, she became someone I will always be thankful to have known.</p>
+     <p class="reveal">Until then, I will appreciate her in the ways I can. I will listen when she speaks, cherish the moments we share, and never allow the familiarity of her presence to make me forget how fortunate I am to have it.</p>
+     <p class="reveal">I may never know whether she was the person I had been searching for all those nights, or whether my dreams were simply my lonely heart trying to imagine a reason to keep going.</p>
+     <p class="isolated reveal">But I know who she is to me now.</p>
+     <p class="reveal">And as I look back on the life I once thought was nothing but an endless stretch of darkness, I finally understand what I could never put into words.</p>
+     <p class="reveal">I thought I'd always live within this dark world, and somehow, yet somehow, you were the light that lit it up, my lady in white</p>
+     <p data-template-id="closing-quote" class="canva-text final-quote reveal" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 19px;">“Some lights do not save us from the darkness. They teach us that there is still something beautiful within it.”</p>
+    </div>
+   </section>
+   <section id="ending" class="ending" aria-label="The final cube">
+    <button id="memory-cube" class="cube" type="button" aria-label="Reveal the memory inside the cube" aria-pressed="false">
+     <img id="memory-image" class="cube-art cube-memory-image" src="memory-reveal-color.png" width="900" height="900" decoding="async" loading="eager" onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='memory-reveal.png';}" alt="A woman in a flowing white dress standing in a sunlit field of tall grass beneath hanging leaves."></button>
+    <p data-template-id="cube-prompt" class="canva-text cube-prompt" style="color: rgb(170, 170, 170); font-weight: 400; font-style: italic; font-size: 19px;">Touch the cube to remember.</p>
+    <p id="ending-sentence" class="ending-sentence" aria-live="polite">I thought I'd always live within this dark world, and somehow, yet somehow, you were the light that lit it up, my lady in white</p>
+   </section>
+  </main>
+  <script>
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+    const storyStart = document.getElementById('story-start');
+    document.getElementById('scroll-cue').addEventListener('click', () => {
+      storyStart.scrollIntoView({ behavior: reducedMotion.matches ? 'instant' : 'smooth' });
+      storyStart.focus({ preventScroll: true });
+    });
+
+    const ending = document.getElementById('ending');
+    const cube = document.getElementById('memory-cube');
+    const memoryImage = document.getElementById('memory-image');
+    const dreamMono = document.getElementById('dream-mono');
+    const dreamColor = document.getElementById('dream-color');
+    const themeMeta = document.getElementById('theme-color-meta');
+    let revealing = false;
+
+    // Make sure the photo is fully loaded and decoded so it is never a blank square.
+    const whenReady = async img => {
+      try {
+        if (!img.complete) {
+          await new Promise(res => { img.addEventListener('load', res, { once:true }); img.addEventListener('error', res, { once:true }); });
+        }
+        if (img.decode) await img.decode();
+      } catch (e) { /* the photo will still display normally */ }
+    };
+    const imageReady = Promise.all([whenReady(memoryImage), whenReady(dreamColor)]);
+
+    async function revealMemory() {
+      if (revealing || ending.classList.contains('is-revealed')) return;
+      revealing = true;
+      await Promise.race([imageReady, new Promise(res => setTimeout(res, 1500))]);
+      // Two frames so the browser registers the starting (blurred, black-and-white) state.
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        ending.classList.add('is-revealed');        // cube: blur clears, colour returns
+        document.body.classList.add('sunshine');    // whole site: dark -> sunshine
+        if (themeMeta) themeMeta.setAttribute('content', '#fdf1c9');
+        cube.setAttribute('aria-pressed', 'true');
+        cube.setAttribute('aria-label', 'Memory revealed: a woman in a sunlit field');
+        dreamMono.setAttribute('alt', 'The same woman in her white dress, now standing in a golden, sunlit field of flowers at sunset.');
+      }));
+    }
+    cube.addEventListener('click', revealMemory);
+
+    const reveals = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window && !reducedMotion.matches) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold:0.06, rootMargin:'0px 0px 40px 0px' });
+      reveals.forEach(el => observer.observe(el));
+    } else reveals.forEach(el => el.classList.add('in-view'));
+
+    const progress = document.getElementById('progress');
+    let progressQueued = false;
+    function updateProgress() {
+      const total = document.documentElement.scrollHeight - innerHeight;
+      progress.style.width = (total > 0 ? Math.max(0, Math.min(100, scrollY / total * 100)) : 0) + '%';
+      progressQueued = false;
+    }
+    addEventListener('scroll', () => {
+      if (!progressQueued) {
+        progressQueued = true;
+        requestAnimationFrame(updateProgress);
+      }
+    }, { passive:true });
+    addEventListener('resize', updateProgress);
+    updateProgress();
+
+    const soundButton = document.getElementById('sound-toggle');
+    const soundOff = document.querySelector('[data-template-id="sound-off"]');
+    const soundOn = document.querySelector('[data-template-id="sound-on"]');
+    const music = document.getElementById('bg-music');
+
+    // Keep the existing SOUND: OFF / SOUND: ON button connected to the music.
+    music.volume = 0.35;
+
+    function setSoundState(on) {
+      soundOff.classList.toggle('hidden', on);
+      soundOn.classList.toggle('hidden', !on);
+      soundButton.setAttribute('aria-pressed', String(on));
+      soundButton.setAttribute(
+        'aria-label',
+        on ? 'Turn background music off' : 'Turn background music on'
+      );
+    }
+
+    soundButton.addEventListener('click', async () => {
+      if (!music.paused) {
+        music.pause();
+        setSoundState(false);
+        return;
+      }
+
+      try {
+        await music.play();
+        setSoundState(true);
+      } catch (error) {
+        setSoundState(false);
+        console.error('Background music could not be played. Make sure her.mp3 is available beside this HTML file.', error);
+      }
+    });
+
+    music.addEventListener('pause', () => setSoundState(false));
+    music.addEventListener('play', () => setSoundState(true));
+    music.addEventListener('ended', () => setSoundState(false));
+  </script>
+ 
+</body></html>
